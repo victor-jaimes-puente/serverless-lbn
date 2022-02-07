@@ -1,0 +1,9 @@
+npx create-react-app front --template typescript
+
+# or
+
+yarn create react-app my-app --template typescript
+
+
+Creating front end ap to call from server. vjp
+
