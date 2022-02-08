@@ -3,14 +3,8 @@ import { Handler } from 'aws-lambda';
 export const hello: Handler = (event: any) => {
   const response = {
     statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: 'Go Serverless v1.0! Your function executed successfully!',
-        input: event,
-      },
-      null,
-      2
-    ),
+    headers: { "Content-Type": "text/html" },
+    body: '<div><h1>Dapper</h1></div>'
   };
 
   return new Promise((resolve) => {
